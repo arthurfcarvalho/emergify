@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+
+    <!-- genre input -->
+    <EditText
+        android:id="@+id/genre_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/genre_hint"
+        android:textColorHint="@color/lightGray"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/spotifyGreen"
+        android:inputType="text"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- search button -->
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_button_text"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/spotifyGreen"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- show results -->
+    <TextView
+        android:id="@+id/results_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/results_label"
+        android:textColor="@color/lightGray"
+        android:visibility="gone"
+        android:layout_marginTop="12dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/results_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+</LinearLayout>

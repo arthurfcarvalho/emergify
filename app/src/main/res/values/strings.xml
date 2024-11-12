@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">emergify</string>
+    <string name="genre_hint">Enter a genre (e.g., pop, rock, rap)</string>
+    <string name="search_button_text">Search</string>
+    <string name="results_label">Emerging Artists:</string>
+    <string name="searching_for_artists">Searching for emerging artists in %1$s…</string>
+</resources>
