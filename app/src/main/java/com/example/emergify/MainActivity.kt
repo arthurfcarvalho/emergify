@@ -122,9 +122,9 @@ class MainActivity : ComponentActivity() {
                         val artist = artists.getJSONObject(i)
                         val artistName = artist.getString("name")
                         val artistPopularity = artist.getInt("popularity")
+                        val artistFollowers = artist.getJSONObject("followers").getInt("total")
 
-                        // Filtra artistas por popularidade e adiciona à lista
-                        if (artistPopularity >= 40 && artistPopularity < 75) {
+                        if (artistPopularity >= 40 && artistPopularity < 75 && artistFollowers <= 2500000) {
                             artistList.add(artistName)
                         }
                     }
